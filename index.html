@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Airbnb Price Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Airbnb Price Predictor</h1>
+        <form method="POST">
+            <input type="text" name="latitude" placeholder="Latitude" required>
+            <input type="text" name="longitude" placeholder="Longitude" required>
+            <input type="number" name="minimum_nights" placeholder="Minimum Nights" required>
+            <input type="number" name="number_of_reviews" placeholder="Number of Reviews" required>
+            <input type="text" name="reviews_per_month" placeholder="Reviews per Month" required>
+            <input type="number" name="availability_365" placeholder="Availability (365 days)" required>
+
+            <select name="room_type" required>
+                <option value="Entire home/apt">Entire home/apt</option>
+                <option value="Private room">Private room</option>
+                <option value="Shared room">Shared room</option>
+            </select>
+
+            <button type="submit">Predict</button>
+        </form>
+
+        {% if prediction is not none %}
+            <h2>Estimated Price: ${{ prediction }}</h2>
+        {% endif %}
+    </div>
+</body>
+</html>
