@@ -23,7 +23,8 @@ Welcome to the **Airbnb Price Prediction** project! This is an interactive web a
    👉 [Airbnb Price Prediction App](https://airbnbpriceprediction-gfhmsaelpjygjtjncqjzjs.streamlit.app/)
 
 2. **Enter the listing details**:
-   - Input the **latitude**, **longitude**, **number of reviews**, **reviews per month**, **minimum nights**, and **room type**.
-"C:\Users\bhavn\OneDrive\Pictures\airbnb.png"
+   - Input the **latitude**, **lon![airbnb](https://github.com/user-attachments/assets/f5ac2401-149c-4cc6-884b-64f2f7df80a0)
+gitude**, **number of reviews**, **reviews per month**, **minimum nights**, and **room type**.
+
 👨‍💻 Developed by: Bhavna
 bhavnanahar245@gmail.com
